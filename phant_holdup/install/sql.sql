@@ -1,0 +1,15 @@
+INSERT INTO `items` (`name`, `label`, `limit`, `rare`, `can_remove`, `data`, `type`) VALUES 
+('p_glasshammer', 'Wybijak do szyb', 10, 0, 0, '{}', 'item'),
+('p_drill', 'Specjalne wiertło', 10, 0, 0, '{}', 'item'),
+('p_wytrych', 'Specjalistyczny wytrych', 10, 0, 0, '{}', 'item'),
+('p_drill2', 'Specjalne diamentowe wiertło', 10, 0, 0, '{}', 'item'),
+('p_card', 'Karta dostępu', 10, 0, 0, '{}', 'item'),
+('p_goldcard', 'Złota karta dostępu', 10, 0, 0, '{}', 'item'),
+('p_machinepistol_parts', 'Platynowa karta dostępu', 10, 0, 0, '{}', 'item'),
+('p_platinumcard', 'Platynowa karta dostępu', 10, 0, 0, '{}', 'item'),
+('p_minismg_parts', 'Części mini smg', 10, 0, 0, '{}', 'item'),
+('p_carbinerifle_parts', 'Części carbine rifle', 10, 0, 0, '{}', 'item'),
+('p_assaultrifle_parts', 'Części assault rifle', 10, 0, 0, '{}', 'item'),
+('p_militarycard', 'Wojskowa karta', 10, 0, 0, '{}', 'item'),
+('p_hack_test_tool', 'Urządzenie do testowania hackowania', 10, 0, 0, '{}', 'item'),
+('p_specialcarbine_parts', 'Częsci special carbine', 10, 0, 0, '{}', 'item');
