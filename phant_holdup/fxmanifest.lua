@@ -17,3 +17,8 @@ server_scripts {
 shared_scripts {
 	'shared/**.lua',
 }
+
+dependencies {
+	'phantum',
+	'es_extended'
+}

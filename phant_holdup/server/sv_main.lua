@@ -6,7 +6,7 @@ RegisterNetEvent(
     'p_holdup:server:start',
     function(data)
         if not FindInArray(SharedConfig.Holdups, data) then
-            DropPlayer(source, 'zostales wyruchany bez mydla przez nigera')
+            DropPlayer(source, 'zostales wyruchany bez mydla przez admina')
             return
         end
 
@@ -22,7 +22,7 @@ RegisterNetEvent(
 
 RegisterNetEvent('p_holdup:server:checkPolice', function(data)
     if not FindInArray(SharedConfig.Holdups, data) then
-        DropPlayer(source, 'zostales wyruchany bez mydla przez nigera')
+        DropPlayer(source, 'zostales wyruchany bez mydla przez admina')
         return
     end
     local xPlayers = exports['esx_scoreboard']:MisiaczekPlayers()
@@ -46,7 +46,7 @@ RegisterNetEvent(
     'p_holdup:server:checkItems',
     function(data)
         if not FindInArray(SharedConfig.Holdups, data) then
-            DropPlayer(source, 'zostales wyruchany bez mydla przez nigera')
+            DropPlayer(source, 'zostales wyruchany bez mydla przez admina')
             return
         end
 
@@ -81,7 +81,7 @@ RegisterNetEvent(
     'p_holdup:server:checkTime',
     function(data)
         if not FindInArray(SharedConfig.Holdups, data) then
-            DropPlayer(source, 'zostales wyruchany bez mydla przez nigera')
+            DropPlayer(source, 'zostales wyruchany bez mydla przez admina')
             return
         end
 
@@ -103,7 +103,7 @@ RegisterNetEvent(
     'p_holdup:server:policeAlert',
     function(data, succ)
         if not FindInArray(SharedConfig.Holdups, data) or not Robbing[source] then
-            DropPlayer(source, 'zostales wyruchany bez mydla przez nigera')
+            DropPlayer(source, 'zostales wyruchany bez mydla przez admina')
             return
         end
 
