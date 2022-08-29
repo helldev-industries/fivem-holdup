@@ -56,7 +56,7 @@ end)
 
 sleep = true
 
-PhantumUtils.Tick(
+PhantumUtils.Tick(1,
     function()
         local playerPos = GetEntityCoords(PlayerPedId(), true)
         for k, v in pairs(SharedConfig.Holdups) do
@@ -99,7 +99,6 @@ PhantumUtils.Tick(
             end
         end
     end,
-    1
 )
 
 
@@ -182,7 +181,7 @@ local CurrentBlip = nil
 RegisterNetEvent(
     'p_holdup:client:setPoliceBlip',
     function(crds, name)
-        exports['phantum']:SetLastGPS(crds)
+        exports['phantum_backups']:SetLastGPS(crds)
 
         ESX.ShowNotification('~r~Naciśnij F4 aby zaznaczyć włączony alarm na GPSie')
         CurrentBlip = AddBlipForCoord(CurrentlyHoldup.pos.x, CurrentlyHoldup.pos.y, CurrentlyHoldup.pos.z)
